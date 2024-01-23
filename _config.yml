@@ -1,19 +1,20 @@
-title: "My Blogs Name"
-author: "Default Author Name"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: "Andrew Napierkowski"
+author: "Andrew Napierkowski"
+description: "Thoughts on game design, game development, web development, and other stuff." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
+email: "andrew.napierkowski@gmail.com"
+twitter_username: "neipo13"
+github_username: "neipo13"
+linkedin_username: "anapierkowski"
 #facebook_username: username
 #flickr_username: username
 #instagram_username: username
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
+itch_username: "andrewnapierkowski"
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
@@ -40,3 +41,9 @@ defaults:
       type: post
     values:
       tags: Other
+
+minima:
+  social_links:
+    - platform: itch  # same as SVG filename.
+      user_url: "https://andrewnapierkowski.itch.io"  # URL of profile page.
+      title: Jam Games  # Optional. Text displayed on hovering over link.
