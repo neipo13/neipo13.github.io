@@ -32,7 +32,7 @@ public static class PhysicsLayers
 ```
 and it would still work the exact same. I use the bit shifters so I don't have to calculate powers of 2 (however easy that might be) and hardcode that. It would also let me use enums if I wanted to go that route. You can see the binary on the right where the 1 shifts to the left (`<<`) by 1 more each time.
 
-Then comes the `|` operator: this is the _bitwise OR_ which essentially joins the bytes of two numbers (`0110 | 0011 = 0111` as it takes 1 in that bit slot if either of the numbers has a 1 there or 0 otherwise).In our case because we are doing powers of 2, each of these will have only one byte set to 1 and the rest 0 which makes the bitwise OR incredibly simple (and useful)!
+Then comes the `|` operator: this is the _bitwise OR_ which essentially joins the bytes of two numbers (`0110 | 0011 = 0111`) as it takes 1 in that bit slot if either of the numbers has a 1 there or 0 otherwise).In our case because we are doing powers of 2, each of these will have only one byte set to 1 and the rest 0 which makes the bitwise OR incredibly simple (and useful)!
 
 Once we have OR'ed together some power of 2 numbers, we can check for any of them by using the bitwise AND operator (`&`) to check for its existence: 
 ```csharp

@@ -1,3 +1,1 @@
-Software Engineer
-
-Game Developer
+Software Engineer ⭕ Game Developer
