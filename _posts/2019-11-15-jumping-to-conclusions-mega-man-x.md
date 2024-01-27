@@ -15,11 +15,13 @@ The MMX camera is actually relatively simple, especially when compared with cont
 
 
 ![side by side jumps](https://imgur.com/0MFAXTa.gif)
+
 <sup>You can see locked (left) vs unlocked (right) vertical axis on two different parts of the same level.</sup>
 
 MMX often plays to its strengths and locks the vertical camera when hitting hallways or other areas where you won't be needing any verticality. It also occasionally has some awkward transitions between the area types depending on what the player did. 
 
 ![Camera Transition](https://imgur.com/3MPW3cy.gif)
+
 <sup>Transition between unlocked and locked cameras just after grabbing the dash boots.</sup>
 
 Here we can see the camera making a transition based on your horizontal position, as soon as you hit a certain line, that camera locks slightly higher and falls now go to certain death rather than to a new area (to the right).
@@ -29,6 +31,7 @@ The unlocked Y follow camera seems to not have too many additional rules with it
 As for one of my favorite bits of juice in games, screenshake, MMX does not overdo it. In fact I think the game could use a bit more shake. As it stands the only points which the screen shake stood out were when large bosses & mini bosses jumped up and landed. I would have expected some small shake on X being hit or when bosses are defeated with the large number of explosions but seems to be reserved for just the big ol' robo-boys and as such the screen shake is exclusively vertical as far as I could see.
 
 ![Camera Shaking](https://imgur.com/jpv0o2H.gif)
+
 <sup>Dropping the hammer & shaking the screen</sup>
 
 That's basically it when it comes to the camera specifics. Locking in both directions for most boss fights as well as some transition stuff when changing rooms (mostly happens at entrance to boss fights) aside, this is pretty much the only logic the camera has as far as I noticed.
@@ -39,6 +42,7 @@ Movement in MMX would be incredibly simple to implement and also works fantastic
 The MMX jump is also relatively simple. It follows a standard arc when the button is held down. Similar to the original Mega Man, you have complete  control while in the air. I noticed no difference in the ability to move or change direction horizontally while in the air vs on the ground. This makes a ton of sense for a game where dodging projectiles and bosses flying around is the main goal vs something like Mario jumping on things is the main challenge. 
 
 ![](https://critpoints.files.wordpress.com/2015/05/megaman-jump1.gif)
+
 <sup>An old friend.</sup>
 
 
@@ -51,6 +55,7 @@ MMX also delivers on what I call input buffering (also seen called input caching
 There are two main things about the jump in MMX that differ from the previous games in the MM series. First is the dash and how the dash affects jumping. Since horizontal speeds are maintained while in the air matching what is on the ground, dashing into a jump allows you to hold that dashed speed for the entire time while you're in the air and also maintains that ability to change direction on a dime and maintain the same speed.
 
 ![Imgur](https://imgur.com/QVu6IGE.gif)
+
 <sup>Gotta go fast!</sup>
 
 I think this is *super* important to the feel of the dash since the game is really momentum-less. I can't think of a better way (or even another realistic way) to implement this, have fun dash-to-jump movement and not implement momentum in any way. A game like Celeste has a very different and momentum based dash with the ability to chain dashes and super jump and maintain or gain momentum and it leads to very interesting and fun movement tech, but that is a game with a very different focus. With the goals here being more about that immediacy and the ability to know exactly what is going to happen in the heat of reacting to a boss's attack while also returning fire, having this dash jump that carries over the dash speed from the ground to the air gives that great dash-to-jump feel while also maintaining that feel of complete control all of the time.
@@ -58,6 +63,7 @@ I think this is *super* important to the feel of the dash since the game is real
 The other major difference is the wall jump. Wall jumps allow you to ascend a wall by jumping up it multiple times, you also have the ability to slow your fall by sliding down a wall. The MMX wall jump is slightly different to that seen in games like Meat Boy or Celeste in that the jump up ascent is the main thing the developers expect you to use the wall jump for. Because that is the expected behavior, when you press jump off the wall you are not propelled in the opposite direction very much the way you would be in most platformers wall jumps. The jump only pushes you off the wall a few pixels. It's so slight in fact (and I believe there is some amount of buffer range to how close you must be to the wall to be sliding down it if holding toward the wall) that you can mash the jump button while sliding and trigger the start of the jump animation several times. This seems to have no gameplay implications other than giving us a hint about the way this was implemented.
 
 ![Wall jump mashing](https://imgur.com/oKgIAwS.gif)
+
 <sup>Mashing jump while sliding and letting go d-pad as you do it gives some clues as to the wall jump implementation.</sup>
 
 You can also dash jump off of a wall. This does have major implications as it allows you to have that dashed speed while in the air when jumping off a wall. A really nice touch though I wish the buffering on the dash input was a bit longer. It currently requires you to push both buttons at pretty much the same time which can be a bit hard with the default button setup. Dash jumping off the wall is a great addition to a game where many boss fights have climbing the walls to dodge attacks and its a bit disappointing that exact timing is expected for the inputs when the timing can already be tight just reacting to Sting Chameleon smacking you with his tongue.
